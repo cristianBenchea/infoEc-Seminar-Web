@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saying Hello</title>
+    <script type="text/javascript">
+        function numChars() {
+            var name = document.formInput.name.value;
+            var newDiv = document.createElement("div");
+            newDiv.style.color = "red";
+            newDiv.innerText = "Your name has " + name.length + " characters.";
+            document.getElementById("addDiv").appendChild(newDiv);
+        }
+    </script>
+</head>
+<body>
+
+<form name="formInput">
+    Enter name: <input type="text" name="name">
+    <input type="button" name="value1" value="Click here" onclick="numChars()">
+</form>
+
+<div id="addDiv"></div>
+
+</body>
+</html>
