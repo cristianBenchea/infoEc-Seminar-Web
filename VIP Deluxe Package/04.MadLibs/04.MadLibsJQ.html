@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Libs</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="04.madLibJQ.js"></script>
+
+</head>
+<body>
+    <div id="contents">
+        <h3>Mad Libs</h3>
+        <hr />
+        <div id="inputs">
+            <div>
+                <label>Verb: <input type="text" id="verb"></label>
+                <br/>
+                <label>Adjective: <input type="text" id="adj"></label>
+                <br />
+                <label>Adverb: <input type="text" id="adv"></label>
+                <br />
+                <label>Noun: <input type="text" id="noun"></label>
+                <br />
+                <label>Exclamation: <input type="text" id="excl"></label>
+                <br />
+            </div>
+            <div id="generator">
+                <input type="button" id="submit" value="Click to generate your story">
+            </div>
+            <hr />
+            <div id="story"></div>
+        </div>
+    </div>
+</body>
+</html>
