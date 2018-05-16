@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Conversion</title>
+</head>
+<body>
+    <h3>Currency converter EUR-USD</h3>
+    <button onclick="Currency()">Convert</button>
+    <p id="output"></p>
+
+    <script>
+        function Currency() {
+            var euros = prompt("Amount of Euros: ", "00");
+            var rate = prompt("Current Exchange Rate: ", "00");
+            var dollarup = (euros*rate);
+            dollarup = dollarup.toFixed(2);
+            document.getElementById("output").innerHTML = "You are exchanging: " + euros +
+                    "<br> The exchange rate is: " + rate +
+                    "<br>" + euros + " euros at an exhange rate of " + rate + " is " + dollarup + " U.S. dollars.";
+        }
+    </script>
+</body>
+</html>
