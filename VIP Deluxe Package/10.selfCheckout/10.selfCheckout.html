@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Self-Checkout</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="10.selfCheckout.js"></script>
+</head>
+<body>
+    <div id="contents">
+        <h3>Create a simple self-checkout system. Prompt for names, prices and quantities of items.</h3>
+        <h5>Own modification: name prompt, give option for user to select whether tax is or is not included in the price already</h5>
+        <hr>
+        <div id="inputs">
+            <label>Name: <input type="text" id="name"></label>
+            <br>
+            <label>Price: <input type="text" id="price"></label>
+            <br>
+            <label>Quantity: <input type="text" id="quantity"></label>
+            <div id="add-to-list">
+                <input type="button" id="additem" value="Add to List">
+            </div>
+        </div>
+        <div id="itemlist">
+            <table id="items">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="totals">
+            <p>VAT included?</p>
+            <label>Yes: <input type="radio" name="tax" value="yes"></label>
+            <label>No: <input type="radio" name="tax" value="no"></label>
+            <br>
+            <input type="button" id="calculate" value="Calculate Total">
+        </div>
+    </div>
+</body>
+</html>
