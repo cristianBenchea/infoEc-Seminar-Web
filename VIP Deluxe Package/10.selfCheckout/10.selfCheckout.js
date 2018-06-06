@@ -34,7 +34,7 @@ function addToList(list, name, price, quantity){
         name: name,
         price: price,
         quantity: quantity
-    })
+    });
     return list;
 }
 

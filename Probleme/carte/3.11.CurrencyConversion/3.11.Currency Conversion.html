@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Conversion</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+        var euros = prompt("Insert the amount of euros"),
+            rate = prompt("Insert the exchange rate"),
+            usd = (euros*rate).toFixed(2);
+        document.getElementById('content').innerHTML = "How many euros are you exchanging? " + euros + "<br>" +
+            "What is the exchange rate? " + rate + "<br>" +
+            euros + " euros at an exchange rate of " + rate + " is " + usd + " U.S Dollars";
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computing Simple Interest</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="3.12.ComputingSimpleInterest.js"></script>
+</head>
+<body>
+    <h3>Create a program that computes simple interest. Prompt for
+        the principal amount, the rate as a percentage, and the time,
+        and display the amount accrued (principal + interest).</h3>
+    <hr>
+    <div id="content"></div>
+    <script>
+        var principal = Number(prompt("Enter the principal")),
+            rate = Number(prompt("Enter the rate of interest")),
+            years = Number(prompt("Enter the number of years")),
+            interest = Math.ceil(principal * (1 + (rate/100) * years));
+        document.getElementById("content").innerHTML = "Enter the principal: " + principal + "<br>" +
+            "Enter the rate of interest: " + rate + "<br>" +
+            "Enter the number of years: " + years + "<br>" +
+            "After " + years + " years at " + rate + "%, the investment will be worth $" + interest;
+    </script>
+</body>
+</html>
