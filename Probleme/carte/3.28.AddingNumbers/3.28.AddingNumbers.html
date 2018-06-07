@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding Numbers</title>
+</head>
+<body>
+
+<script>
+    var nums = prompt("How many numbers to add?");
+    if(isNaN(nums) || nums < 0){
+        alert("Please enter a positive number");
+        location.reload();
+    } else {
+        var total = 0;
+        for(var i = 0; i < nums; i++){
+            var number = Number(prompt("Enter a number"));
+            if(!isNaN(number)){
+                total += number;
+            }
+        }
+        document.body.innerHTML = "The total is: " + total;
+    }
+
+</script>
+</body>
+</html>

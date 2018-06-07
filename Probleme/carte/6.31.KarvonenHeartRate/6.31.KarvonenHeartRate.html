@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karvonen Heart Rate</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="6.31.KarvonenHeartRate.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            padding:5px;
+        }
+        .dotted-bottom {
+            border-bottom: 2px dotted black;
+        }
+        .dotted {
+            border-right: 2px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <label for="slider" id="sliderLabel">55%</label>
+        <input type="range" min="55" max="95" step="5" value="55" id="slider">
+    </div>
+    <table id="tabel">
+        <tr>
+            <th class="dotted-bottom dotted">Intensity</th>
+            <th class="dotted-bottom">Rate</th>
+        </tr>
+        <tr id="results"></tr>
+    </table>
+
+</body>
+</html>
